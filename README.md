@@ -22,6 +22,8 @@ Ready to get involved? Join our Discord server to connect with other members, as
 
 **[Join our Discord Community](https://discord.gg/ZVtQeThnPU)**
 
+Check out our self-reported map to see who is around you **[Meshview](https://meshview.scmesh.us/map)**
+
 ## Other ways to get involved
 Join us on our MQTT Server using following settings on your node:
 
@@ -82,23 +84,6 @@ Password: Meshtastical (M is capitalized)
 
 TLS: ON (This needs to be turned on to communicate with out server properly)
 
-## Local Development
-
-This website is a static HTML, CSS, and JavaScript site. To view it locally, simply open `index.html` in your web browser.
-
-```bash
-# Clone the repository (if you haven't already)
-git clone [repository-url]
-cd upstate-sc-mesh
-
-# Open the main page in your browser
-# (Example for Linux, adjust for your OS)
-x-www-browser index.html
-```
-
-## Contributing
-
-We welcome contributions to the website and the network! If you'd like to contribute to the website, please fork the repository and submit a pull request. For network contributions or general community involvement, please join our Discord.
 
 ## Contact
 
