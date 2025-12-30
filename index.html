@@ -4,193 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Carolina Mesh</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <!-- Header -->
     <header>
-        <a href="#" class="logo">South Carolina Mesh</a>
-        <nav>
-            <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <span class="sr-only">Menu</span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul id="primary-navigation" class="nav-links">
-                <li class="mobile-menu-logo-item">
-                    <a href="#" class="logo mobile-logo">South Carolina Mesh</a>
-                </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#join">Join Us</a></li>
-                
-                <li><a href="https://meshview.scmesh.us/" target="_blank">MeshView</a></li>
-            </ul>
-        </nav>
+        <a href="#" class="logo">SC Mesh</a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#meshtastic">What is Meshtastic?</a></li>
+            <li><a href="#community">Our Community</a></li>
+           
+            <li><a href="#contact">Join Us</a></li>
+        </ul>
     </header>
 
-    <main>
-        <section id="top" class="hero">
-            <div class="hero-text">
-                <h1>Welcome to South Carolina Mesh</h1>
-                <p>A community-powered, off-grid communication network for South Carolina.</p>
-                <a href="#join" class="cta-button">Get Involved</a>
-            </div>
-        </section>
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Welcome to South Carolina Mesh</h1>
+            <p>A decentralized, community-driven mesh network for resilient communication across South Carolina.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
 
-        <section id="about" class="content-section">
-            <h2>About Meshtastic</h2>
-            <p><a href="https://meshtastic.org/" target="_blank">Meshtastic</a> is an <a href="https://github.com/meshtastic/Meshtastic-device" target="_blank">open-source project</a> that uses affordable, low-power devices to create a long-range, off-grid communication network. It's perfect for hiking, emergencies, or just staying connected where cell service is unavailable.</p>
-            <h2 class="community-heading">Our Community</h2>
-            <p>South Carolina Mesh is a group of enthusiasts, hobbyists, and prepared individuals building and maintaining a Meshtastic network. While centered in the Upstate, our network is for all of South Carolina. We welcome anyone to join our community, regardless of location, to collaborate on expanding coverage, share knowledge, and support each other.</p>
-            <div class="cta-section network-tools">
-                <p>
-                    <strong>Check out our self-reported map to see who is around you:</strong><br>
-                    <div class="button-container">
-                        
-                        <a href="https://meshview.scmesh.us/" target="_blank" class="cta-button">MeshView</a>
-                    </div>
-                </p>
-            </div>
-        </section>
+    <!-- About -->
+    <section class="content-section" id="about">
+        <h2>About</h2>
+        <p>
+            Welcome to webpage for <strong>South Carolina Mesh (SC Mesh)</strong>, a community dedicated to building and maintaining an off-grid communication network in the state of South Carolina. SCMesh is a decentralized, but loosely organized group for South Carolina (and other) tech enthusiasts who work together on a volunteer basis to make South Carolina mesh network work the best it can.
+        </p>
+    </section>
 
-        <section id="join" class="content-section cta-section">
-            <h2>Join Us</h2>
-            <p>Ready to get involved? Join our Discord server to connect with other members, ask questions, and participate in discussions about Meshtastic and our local network. Discord is similar to forum site or message boards, except you can also use audio and video to communicate with the group.</p>
-            <a href="https://discord.gg/ZVtQeThnPU" target="_blank" class="cta-button">Join our Discord</a>
-            <P>Other ways to get involved</P>
-            Join us on our MQTT Server using following settings on your node:</br>
-Radio Settings/LoRa</br>
+    <!-- What is Meshtastic -->
+    <section class="content-section" id="meshtastic">
+        <h2>What is Meshtastic?</h2>
+        <p>
+            Meshtastic is an open-source project that leverages affordable, low-power LoRa devices to create a decentralized, off-grid communication network. It's ideal for situations requiring robust communication independent of traditional infrastructure, such as:
+        </p>
 
-OK to MQTT - ON</br>
+        <ul style="text-align: left; max-width: 700px; margin: 1.5rem auto; line-height: 1.7;">
+            <li><strong>Hiking and Outdoor Adventures:</strong> Stay connected in remote areas where cellphones don't work due to absence of nearby towers or too much congestion.</li>
+            <li><strong>Emergency Preparedness:</strong> Maintain communication during outages or disasters, when regular infrastructure like cell phones or internet is unavailable.</li>
+            <li><strong>Community Building:</strong> Connect with like-minded individuals and expand local network coverage.</li>
+        </ul>
+    </section>
 
-Radio Settings/Channels</br>
+    <!-- Community -->
+    <section class="content-section" id="community">
+        <h2 class="community-heading">Our Community</h2>
+        <p>
+            South Carolina Mesh is comprised of enthusiasts, hobbyists, and prepared individuals passionate about resilient communication. Our main focus is contributing to Meshtastic ecosystem in South Carolina; however, we are exploring other communication systems such as MeshCore. We encourage collaboration, knowledge sharing, and mutual support to expand our network's reach and capabilities.
+            <br><br>
+            Check out our self-reported map to see who is around you 
+            <a href="https://meshview.scmesh.us/map" target="_blank">Meshview</a>.
+        </p>
+    </section>
 
-Click to Add Channel</br>
+        <!-- Join Us -->
+    <section class="content-section cta-section" id="contact">
+        <h2>Join Us</h2>
+        <p>
+            Ready to get involved? Join our Discord server to connect with other members, ask questions, and participate in discussions about Meshtastic and our local network. Discord is similar to a forum site or message board, except you can also use audio and video to communicate with the group.
+            <br><br>
+            <a href="https://discord.gg/ZVtQeThnPU" target="_blank">Join our Discord Community</a>
+        </p>
 
-Name: SCMesh</br>
+        <h3 style="margin-top: 2.5rem;">Other Ways to Get Involved</h3>
+        <p>Join us on our MQTT Server using the following settings on your node:</p>
 
-Key Size: Default (8bit)</br>
+        <ul style="text-align: left; max-width: 700px; margin: 1.5rem auto; line-height: 1.7;">
+            <li><strong>Radio Settings / LoRa</strong><br>OK to MQTT: ON</li>
 
-Key: AQ==</br>
+            <li><strong>Radio Settings / Channels</strong><br>
+                Click to Add Channel<br>
+                Name: SCMesh<br>
+                Key Size: Default (8bit)<br>
+                Key: AQ==<br>
+                Channel Role: Secondary<br>
+                Position: ON, 1.8 miles<br>
+                MQTT: Uplink ON, Downlink ON
+            </li>
 
-Channel Role: Secondary</br>
+            <li><strong>Module Settings / MQTT</strong><br>
+                Enabled: ON<br>
+                MQTT Client Proxy: ON if using cellphone (if node is connected to WiFi, leave this OFF)<br>
+                Encryption Enabled: ON<br>
+                JSON Enabled: OFF
+            </li>
 
-Position: ON, 1.8 miles</br>
+            <li><strong>Map Report</strong><br>
+                Enabled: ON<br>
+                Consent to voluntary transmission: ON<br>
+                Map Publish Interval: 1–3 hours<br>
+                Approximate location: 1.8 miles
+            </li>
 
-MQTT: Uplink ON, Downlink ON</br>
+            <li><strong>Root Topic</strong><br>
+                msh/US/SC
+            </li>
 
-Module Settings/MQTT</br>
+            <li><strong>Server</strong><br>
+                Address: mqtt.scmesh.us<br>
+                Username: scmesh<br>
+                Password: Meshtastical (M is capitalized)<br>
+                TLS: ON (required for proper communication)
+            </li>
+        </ul>
+    </section>
 
-Enabled: ON</br>
-
-MQTT Client Proxy: ON if using cellphone. (if node connected to wifi, leave this off)</br>
-
-Encryption Enabled: ON</br>
-
-JSON Enabled: OFF</br>
-
-Map Report</br>
-
-Enabled: ON</br>
-
-Consent to voluntary transmission ON</br>
-
-Set Map Publish Interval to 1-3 hours</br>
-
-Approximate location: 1.8 miles</br>
-
-Root Topic</br>
-
-Root topic: msh/US/SC</br>
-
-Server</br>
-
-Address: mqtt.scmesh.us</br>
-
-Username: scmesh</br>
-
-Password: Meshtastical (M is capitalized)</br>
-
-TLS: ON (This needs to be turned on to communicate with out server properly)</br>
-
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 South Carolina Mesh</p>
+        <p>© 2025 South Carolina Mesh — All Rights Reserved</p>
     </footer>
 
+    <!-- Mobile Menu Script -->
     <script>
-        const sections = document.querySelectorAll('.content-section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        sections.forEach(section => {
-            observer.observe(section);
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+            nav.classList.toggle('active');
         });
-
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        const navLinksList = navLinks.querySelectorAll('a'); // Select all anchor tags within navLinks
-
-        // Function to handle opening/closing the mobile menu with transitions
-        function toggleMobileMenu() {
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', !isExpanded);
-
-            if (!isExpanded) { // Menu is currently closed, about to open
-                if (window.innerWidth <= 945) { // Only apply for mobile view
-                    navLinks.style.display = 'flex';
-                }
-                // Reintroduce setTimeout to allow display: flex to render before adding 'active'
-                setTimeout(() => {
-                    navLinks.classList.add('active');
-                }, 10); // Small delay
-            } else { // Menu is currently open, about to close
-                navLinks.classList.remove('active');
-                navLinks.addEventListener('transitionend', function handler() {
-                    if (!navLinks.classList.contains('active') && window.innerWidth <= 945) {
-                        navLinks.style.display = 'none';
-                    }
-                    navLinks.removeEventListener('transitionend', handler);
-                }, { once: true });
-            }
-        }
-
-        // Event listener for menu toggle button
-        menuToggle.addEventListener('click', toggleMobileMenu);
-
-        // Add event listeners to navigation links to close the menu
-        navLinksList.forEach(link => {
-            link.addEventListener('click', () => {
-                if (menuToggle.getAttribute('aria-expanded') === 'true') {
-                    toggleMobileMenu(); // Call toggleMobileMenu to close the menu
-                }
-            });
-        });
-
-        // New code for resize handling
-        function handleResize() {
-            if (window.innerWidth > 945) { // If desktop view
-                navLinks.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', 'false');
-                navLinks.style.display = 'flex';
-            } else { // Mobile view
-                if (!navLinks.classList.contains('active')) {
-                    navLinks.style.display = 'none';
-                } else {
-                    navLinks.style.display = 'flex';
-                }
-            }
-        }
-
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('DOMContentLoaded', handleResize);
     </script>
+
 </body>
 </html>
